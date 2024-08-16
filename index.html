@@ -351,8 +351,8 @@
         </section>
 
 
-        <section class="section">
-            <div class="container">
+
+            <!-- <div class="container">
                 <button class="button btn-modal" type="button">
                     <svg class="modal-icon" width="8" height="8">
                         <use href="./images/icons.svg#icon-modal-icon-buttonclose-normal">
@@ -360,7 +360,7 @@
                     </svg>
                 </button>
 
-            </div>
+            </div> -->
 
         </section> 
 
@@ -416,11 +416,11 @@
             
             <div class="footer-subscribe-container">
                 
-                <h4 class="footer-form-title">Subscribe</h4>
+                <p class="footer-form-title">Subscribe</p>
 
                 <form class="footer-form">
                     <label class="footer-form-label">
-                        <input class="footer-email-input" type="email" name="email" placeholder="E-mail"/>
+                        <input class="footer-email-input" type="email" name="email" placeholder="E-mail">
                     </label>
                     <button class="btn-submit" type="submit">Subscribe
                         <svg class="footer-form-icon" width= "24" height= "20">
@@ -436,86 +436,84 @@
 
 
         
-    </footer>
+    </footer> 
+
+    <!-- Modal -->
 
 <div class="modal-backdrop">
     <div class="modal-container">
                 
-        <button class="button btn-modal" type="button">
-                <svg class="modal-icon" width="16" height="16">
+        <button class="btn-modal" type="button">
+                <svg class="modal-icon" width="8" height="8">
                     <use href="./images/icons.svg#icon-modal-icon-buttonclose-normal">
                     </use>
                 </svg>
             </button> 
 
-            <h4 class="modal-title">Leave your contacts and we will call you back</h4> 
-            <form class="modal-form" autocomplete="on">
+            <p class="modal-text">Leave your contacts and we will call you back</p> 
+    
+
+            <form class="modal-form" name="personal-data" autocomplete="off">
+              
                 <div class="form-field">
-                    <label class="form-label" for="user-name">Name
+                    <label class="form-label" for="user-name">Name</label>
                         <div class="input-container">
                             <input id="user-name" class="form-input" type="text" name="user-name" required="">
-                                <svg class="icon-modal" width="18" height="24">
+                                <svg class="input-icon" width="18" height="24">
                                     <use href="./images/icons.svg#icon-modal-icon1-name">
                                     </use>
                                 </svg>
                         </div>
-                    </label>
-                </div>
+                    </div>
 
                     <div class="form-field">
-                        <label class="form-label" for="user-tel">Phone
+                        <label class="form-label" for="user-tel">Phone</label>
                             <div class="input-container">
                                 <input id="user-tel" class="form-input" type="tel" name="user-tel" required="">
-                                    <svg class="icon-modal" width="18" height="24">
-                                        <use href="./images/icons.svg#icon-modal-icon1-name">
+                                    <svg class="input-icon" width="18" height="24">
+                                        <use href="./images/icons.svg#icon-modal-icon2-phone">
                                         </use>
                                     </svg>
                             </div>
-                        </label>
-
                     </div>
 
                 <div class="form-field">
-                    <label class="form-label" for="user-email">Email
+                    <label class="form-label" for="user-email">Email</label>
                         <div class="input-container">
                             <input id="user-email" class="form-input" type="email" name="user-email" required="">
-                                <svg class="icon-modal" width="18" height="24">
+                                <svg class="input-icon" width="18" height="24">
                                     <use href="./images/icons.svg#icon-modal-icon3-mail">
                                     </use>
                                 </svg>
                         </div>
-                    </label>
-
                 </div> 
 
-                <div class="form-field">
-                    <label class="form-label" for="user-comment">Comment
-                        <div class="input-container">
-                            <textarea id="user-comment" class="form-input form-textarea" type="textarea" name="user-comment" placeholder="Text input" rows="7">
-                            </textarea>
+                <div class="comment">
+                    <label class="form-label" for="user-comment">Comment</label>
+                        <textarea id="user-comment" class="input-area" name="user-comment" placeholder="Text input" rows="5">
+                        </textarea>
                         </div>
-                    </label>
-
                 </div> 
 
-                <div class="form-field agreement">
-                    <input type="checkbox" name="user-privacy" id="user-privacy" class="form-checkbox visually-hidden" required>
+                <!-- checkbox -->
+
+                <div class="checkbox">
+                    <input type="checkbox" name="user-privacy" id="user-privacy" class="form-checkbox visually-hidden" value="true">
                     <label for="user-privacy" class="form-label">
                         <span class="checkbox-icon">
                             <svg class="checkbox-checked-icon" width="10" height="8">
                             <use href="./images/icons.svg#icon-checkbox-active"></use>
                             </svg>
                         </span>
-                        I accept the terms and conditions of the Privacy Policy
-
+                        I accept the terms and conditions of the 
+                        <a class="privacy-policy" href="">Privacy Policy</a>
                     </label>
-
                 </div>
 
-                <button class="btn hero-button send-btn" type="submit">Send</button>
+                <button class="modal-submit-button" type="submit">Send</button>
             </form>
-    </div>
-
+    
+        </div>
 </div>
 
 
