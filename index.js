@@ -1,8 +1,8 @@
-const button = document.querySelector(".btn-modal");
+const button = document.querySelector(".hero-button");
 const backdrop = document.querySelector(".modal-backdrop");
 button.addEventListener("click", toggleModal);
 backdrop.addEventListener("click", (e) => {
-const target = e.target.closest(".btn-close-modal");
+const target = e.target.closest(".btn-modal");
 if (!target) {
 return;
 }
