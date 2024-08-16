@@ -745,7 +745,11 @@ header {
  /* modal  */
 
  
-    
+
+ .body .backdrop {
+    width: 100%;
+ }
+
  .backdrop {
     position: fixed;
     top: 0;
