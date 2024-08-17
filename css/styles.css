@@ -746,10 +746,6 @@ header {
 
  
 
- .body .backdrop {
-    width: 100%;
- }
-
  .backdrop {
     position: fixed;
     top: 0;
@@ -761,6 +757,10 @@ header {
       visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     visibility: hidden;
 } 
+
+.backdrop {
+    width: 100%;
+}
 
 
 .is-open {
